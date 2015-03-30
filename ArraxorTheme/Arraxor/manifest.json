@@ -1,8 +1,8 @@
 {
-	"version": "2.10",
+	"version": "1.0",
 	"manifest_version": 2,
-	"name": "Mod Crow Theme",
-	"description": "Mod Crow RuneScape theme",
+	"name": "Arraxor Theme",
+	"description": "Arraxor RuneScape theme",
 	"icons": { "128": "images/icon128.png" },
 	"theme": {
 		"images": {
