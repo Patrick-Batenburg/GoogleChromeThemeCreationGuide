@@ -35,7 +35,7 @@
 		"buttons": [ 1.0, 1.0, 0.5 ]
 		},
 		"properties": {
-		"ntp_background_alignment": "left top",
+		"ntp_background_alignment": "top",
 		"ntp_background_repeat": "no-repeat",
 		"ntp_logo_alternate" : 1
 		}
