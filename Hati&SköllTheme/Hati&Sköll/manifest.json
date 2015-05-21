@@ -1,8 +1,8 @@
 {
-	"version": "2.10",
+	"version": "1.0",
 	"manifest_version": 2,
-	"name": "Mod Crow Theme",
-	"description": "Mod Crow RuneScape theme",
+	"name": "Hati & skoll Theme",
+	"description": "Hati & Skoll RuneScape theme",
 	"icons": { "128": "images/icon128.png" },
 	"theme": {
 		"images": {
@@ -13,7 +13,7 @@
 		"theme_toolbar": "images/theme_toolbar.png",
 		"theme_tab_background": "images/theme_tab_background.png",
 		"theme_tab_background_incognito": "images/theme_tab_background.png",
-		"theme_ntp_background": "images/theme_ntp_background1920x1080.jpeg",
+		"theme_ntp_background": "images/theme_ntp_background.jpg",
 		"theme_frame_overlay": "images/theme_frame_overlay.png",
 		"theme_frame_overlay_inactive": "images/theme_frame_overlay_inactive.png",
 		"theme_frame_overlay_incognito": "images/theme_frame_overlay.png",
