@@ -2,7 +2,7 @@
 	"version": "1",
 	"manifest_version": 2,
 	"name": "Nomad Theme",
-	"description": "Freneskae theme",
+	"description": "Nomad theme",
 	"icons": { "128": "images/icon128.png" },
 	"theme": {
 		"images": {
@@ -37,7 +37,7 @@
 		"properties": {
 		"ntp_background_alignment": "top",
 		"ntp_background_repeat": "no-repeat",
-		"ntp_logo_alternate" : 1
+		"ntp_logo_alternate" : 0
 		}
 	}
 }		
