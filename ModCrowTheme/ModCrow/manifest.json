@@ -2,7 +2,7 @@
 	"version": "2.10",
 	"manifest_version": 2,
 	"name": "Mod Crow Theme",
-	"description": "Mod Crow RuneScape theme",
+	"description": "Jagex Mod Crow",
 	"icons": { "128": "images/icon128.png" },
 	"theme": {
 		"images": {

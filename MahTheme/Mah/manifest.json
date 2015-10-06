@@ -2,7 +2,7 @@
 	"version": "1",
 	"manifest_version": 2,
 	"name": "Mah Theme",
-	"description": "Elder Divination Mah theme",
+	"description": "Elder Divination, Elder God Mah",
 	"icons": { "128": "images/icon128.png" },
 	"theme": {
 		"images": {

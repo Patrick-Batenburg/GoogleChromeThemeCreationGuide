@@ -2,7 +2,7 @@
 	"version": "1.0",
 	"manifest_version": 2,
 	"name": "Hati & skoll Theme",
-	"description": "Hati & Skoll RuneScape theme",
+	"description": "Hati & Skoll",
 	"icons": { "128": "images/icon128.png" },
 	"theme": {
 		"images": {
