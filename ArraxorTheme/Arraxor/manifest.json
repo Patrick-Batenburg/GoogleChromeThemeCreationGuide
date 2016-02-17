@@ -2,7 +2,8 @@
 	"version": "1.0",
 	"manifest_version": 2,
 	"name": "Arraxor Theme",
-	"description": "Arraxor",
+    "description": "Arraxor",
+    "author": "Extreme Hunt",
 	"icons": { "128": "images/icon128.png" },
 	"theme": {
 		"images": {

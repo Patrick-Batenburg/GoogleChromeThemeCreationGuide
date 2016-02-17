@@ -2,7 +2,8 @@
 	"version": "1",
 	"manifest_version": 2,
 	"name": "Saradomin vs Zamorak Theme",
-	"description": "Saradomin vs Zamorak",
+    "description": "Saradomin vs Zamorak",
+    "author": "Extreme Hunt",
 	"icons": { "128": "images/icon128.png" },
 	"theme": {
 		"images": {

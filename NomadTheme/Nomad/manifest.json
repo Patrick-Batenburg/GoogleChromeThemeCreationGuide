@@ -2,7 +2,8 @@
 	"version": "1",
 	"manifest_version": 2,
 	"name": "Nomad Theme",
-	"description": "Nomad",
+    "description": "Nomad",
+    "author": "Extreme Hunt",
 	"icons": { "128": "images/icon128.png" },
 	"theme": {
 		"images": {

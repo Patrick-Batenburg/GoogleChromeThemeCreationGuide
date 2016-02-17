@@ -2,7 +2,8 @@
 	"version": "1",
 	"manifest_version": 2,
 	"name": "Mah Theme",
-	"description": "Elder Divination, Elder God Mah",
+    "description": "Elder Divination, Elder God Mah",
+    "author": "Extreme Hunt",
 	"icons": { "128": "images/icon128.png" },
 	"theme": {
 		"images": {
