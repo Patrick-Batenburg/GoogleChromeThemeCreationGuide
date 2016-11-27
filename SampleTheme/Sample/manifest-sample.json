@@ -1,0 +1,68 @@
+{
+  "manifest_version": 2,
+  "name": "My Extension",
+  "version": "versionString",
+  "description": "A plain text description",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "author": "Name|Username|Nickname",
+  "theme": {
+    // Pick image elements your gonna use (or none). Name of images can be anything.
+    "images": {
+      "theme_button_background": "images/theme_window_control_background.png",
+      "theme_frame": "images/theme_frame.png",
+      "theme_frame_inactive": "images/theme_frame.png",
+      "theme_frame_incognito": "images/theme_frame.png",
+      "theme_frame_incognito_inactive": "images/theme_frame.png",
+      "theme_frame_overlay": "images/theme_frame_overlay.png",
+      "theme_frame_overlay_inactive": "images/theme_frame_overlay_inactive.png",
+      "theme_ntp_attribution": "images/theme_ntp_attribution.png",
+      "theme_ntp_background": "images/theme_ntp_background1920x1080.png",
+      "theme_tab_background": "images/theme_tab_background.png",
+      "theme_tab_background_incognito": "images/theme_tab_background.png",
+      "theme_tab_background_v": "images/theme_tab_background_v.png",
+      "theme_toolbar": "images/theme_toolbar.png",
+      "theme_window_control_background": "images/theme_window_control_background.png"
+    },
+    // Pick color elements your gonna use (or none). Colors are in RGB format.
+    "colors": {
+      "bookmark_text": [ 0, 0, 0 ],
+      "button_background": [ 0, 0, 0 ],
+      "control_background": [ 0, 0, 0 ],
+      "frame": [ 0, 0, 0 ],
+      "frame_inactive": [ 0, 0, 0 ],
+      "frame_incognito": [ 0, 0, 0 ],
+      "frame_incognito_inactive": [ 0, 0, 0 ],
+      "ntp_background": [ 0, 0, 0 ],
+      "ntp_header": [ 0, 0, 0 ],
+      "ntp_link": [ 0, 0, 0 ],
+      "ntp_link_underline": [ 0, 0, 0 ],
+      "ntp_section": [ 0, 0, 0 ],
+      "ntp_section_link": [ 0, 0, 0 ],
+      "ntp_section_link_underline": [ 0, 0, 0 ],
+      "ntp_section_text": [ 0, 0, 0 ],
+      "ntp_text": [ 0, 0, 0 ],
+      "tab_background_text": [ 0, 0, 0 ],
+      "tab_text": [ 0, 0, 0 ],
+      "toolbar": [ 0, 0, 0, 0.0 ]
+    },
+    // Pick tint elements your gonna use (or none). Tints are in HSL format.
+    "tints": {
+      "buttons": [ 0.5, 0.5, 0.5 ],
+      "frame": [ 0.5, 0.5, 0.5 ],
+      "frame_inactive": [ 0.5, 0.5, 0.5 ],
+      "frame_incognito": [ 0.5, 0.5, 0.5 ],
+      "frame_incognito_inactive": [ 0.5, 0.5, 0.5 ],
+      "background_tab": [ 0.5, 0.5, 0.5 ]
+    },
+    // Pick property elements your gonna use (or none).
+    "properties": {
+      "ntp_background_alignment": "center|stretch|top|top-left|top-right|bottom|bottom-left|bottom-right",
+      "ntp_background_repeat": "no-repeat|repeat|repeat-x|repeat-y",
+      "ntp_logo_alternate": 0
+    }
+  }
+}

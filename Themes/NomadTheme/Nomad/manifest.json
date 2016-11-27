@@ -1,0 +1,44 @@
+{
+	"version": "1",
+	"manifest_version": 2,
+	"name": "Nomad Theme",
+    "description": "Nomad",
+    "author": "Extreme Hunt",
+	"icons": { "128": "images/icon128.png" },
+	"theme": {
+		"images": {
+		"theme_frame": "images/theme_frame.png",
+		"theme_frame_inactive": "images/theme_frame.png",
+		"theme_frame_incognito": "images/theme_frame.png",
+		"theme_frame_incognito_inactive": "images/theme_frame.png",
+		"theme_toolbar": "images/theme_toolbar.png",
+		"theme_tab_background": "images/theme_tab_background.png",
+		"theme_tab_background_incognito": "images/theme_tab_background.png",
+		"theme_ntp_background": "images/theme_ntp_background1920x1080.jpg",
+		"theme_frame_overlay": "images/theme_frame_overlay.png",
+		"theme_frame_overlay_inactive": "images/theme_frame_overlay_inactive.png",
+		"theme_frame_overlay_incognito": "images/theme_frame_overlay.png",
+		"theme_frame_overlay_incognito_inactive": "images/theme_frame_overlay_inactive.png",
+		"theme_ntp_attribution": "images/theme_ntp_attribution.png",
+		"theme_window_control_background": "images/theme_window_control_background.png"
+		},
+		"colors": {
+		"toolbar": [ 0, 0, 0, 0.9 ],
+		"tab_text": [ 225, 187, 52 ],
+		"tab_background_text": [ 178, 219, 238 ],
+		"bookmark_text": [ 178, 219, 238 ],
+		"ntp_background": [ 0, 0, 0 ],
+		"ntp_text": [ 178, 219, 238 ],
+		"ntp_header": [ 130, 0, 0 ]
+		},
+		"tints": {
+		"frame_inactive" : [ -1.0, 0.5, 0.5 ],
+		"buttons": [ 1.0, 1.0, 0.5 ]
+		},
+		"properties": {
+		"ntp_background_alignment": "top",
+		"ntp_background_repeat": "no-repeat",
+		"ntp_logo_alternate" : 0
+		}
+	}
+}		
