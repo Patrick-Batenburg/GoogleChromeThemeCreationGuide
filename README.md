@@ -1,2 +1,2 @@
-# GoogleChromeTheme
-Google Chrome Theme Creation Guide 
+# GoogleChromeThemeCreationGuide
+Guide for creating Google Chrome Themes
