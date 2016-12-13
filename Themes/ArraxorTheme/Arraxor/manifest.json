@@ -1,64 +1,64 @@
 {
-	"manifest_version": 2,
-	"name": "Arraxor Theme",
-	"version": "1.0.1",
-	"description": "Arraxor Theme for Google Chrome",
-	"icons": {
-		"16": "images/icons/icon16.png",
-		"48": "images/icons/icon48.png",
-		"128": "images/icons/icon128.png"
- 	 },
-	"author": "Extreme Hunt",
-  	"theme": {
-		"images": {
-			"theme_button_background": "images/theme_window_control_background.png",
-			"theme_frame": "images/theme_frame.png",
-			"theme_frame_inactive": "images/theme_frame.png",
-			"theme_frame_incognito": "images/theme_frame.png",
-			"theme_frame_incognito_inactive": "images/theme_frame.png",
-			"theme_frame_overlay": "images/theme_frame_overlay.png",
-			"theme_frame_overlay_inactive": "images/theme_frame_overlay_inactive.png",
-			"theme_ntp_attribution": "images/theme_ntp_attribution.png",
-			"theme_ntp_background": "images/theme_ntp_background1920x1080.png",
-			"theme_tab_background": "images/theme_tab_background.png",
-			"theme_tab_background_incognito": "images/theme_tab_background.png",
-			"theme_tab_background_v": "images/theme_tab_background_v.png",
-			"theme_toolbar": "images/theme_toolbar.png",
-			"theme_window_control_background": "images/theme_window_control_background.png"
-		},
-		"colors": {
-			"bookmark_text": [ 178, 219, 238 ],
-			"button_background": [ 0, 0, 0 ],
-			"control_background": [ 0, 0, 0 ],
-			"frame": [ 0, 0, 0 ],
-			"frame_inactive": [ 0, 0, 0 ],
-			"frame_incognito": [ 0, 0, 0 ],
-			"frame_incognito_inactive": [ 0, 0, 0 ],
-			"ntp_background": [ 0, 0, 0 ],
-			"ntp_header": [ 130, 0, 0 ],
-			"ntp_link": [ 0, 0, 0 ],
-			"ntp_link_underline": [ 0, 0, 0 ],
-			"ntp_section": [ 0, 0, 0 ],
-			"ntp_section_link": [ 0, 0, 0 ],
-			"ntp_section_link_underline": [ 0, 0, 0 ],
-			"ntp_section_text": [ 0, 0, 0 ],
-			"ntp_text": [ 178, 219, 238 ],
-			"tab_background_text": [ 178, 219, 238 ],
-			"tab_text": [ 225, 187, 52 ],
-			"toolbar": [ 0, 0, 0, 0.9 ]
-		},
-		"tints": {
-			"buttons": [ 1.0, 1.0, 0.5 ],
-			"frame": [ -1.0, 0.5, 0.5 ],
-			"frame_inactive": [ -1.0, 0.5, 0.5 ],
-			"frame_incognito": [ -1.0, 0.5, 0.5 ],
-			"frame_incognito_inactive": [ 0, 0.5, 0.5 ],
-			"background_tab": [ 0.5, 0.5, 0.5 ]
-		},
-		"properties": {
-			"ntp_background_alignment": "top",
-			"ntp_background_repeat": "no-repeat",
-			"ntp_logo_alternate": 1
-		}
-	}
+    "manifest_version": 2,
+    "name": "Arraxor Theme",
+    "version": "1.0.1",
+    "description": "Arraxor Theme for Google Chrome",
+    "icons": {
+        "16": "images/icons/icon16.png",
+        "48": "images/icons/icon48.png",
+        "128": "images/icons/icon128.png"
+     },
+    "author": "Extreme Hunt",
+    "theme": {
+        "images": {
+            "theme_button_background": "images/theme_window_control_background.png",
+            "theme_frame": "images/theme_frame.png",
+            "theme_frame_inactive": "images/theme_frame.png",
+            "theme_frame_incognito": "images/theme_frame.png",
+            "theme_frame_incognito_inactive": "images/theme_frame.png",
+            "theme_frame_overlay": "images/theme_frame_overlay.png",
+            "theme_frame_overlay_inactive": "images/theme_frame_overlay_inactive.png",
+            "theme_ntp_attribution": "images/theme_ntp_attribution.png",
+            "theme_ntp_background": "images/theme_ntp_background1920x1080.png",
+            "theme_tab_background": "images/theme_tab_background.png",
+            "theme_tab_background_incognito": "images/theme_tab_background.png",
+            "theme_tab_background_v": "images/theme_tab_background_v.png",
+            "theme_toolbar": "images/theme_toolbar.png",
+            "theme_window_control_background": "images/theme_window_control_background.png"
+        },
+        "colors": {
+            "bookmark_text": [178, 219, 238],
+            "button_background": [0, 0, 0],
+            "control_background": [0, 0, 0],
+            "frame": [0, 0, 0],
+            "frame_inactive": [0, 0, 0],
+            "frame_incognito": [0, 0, 0],
+            "frame_incognito_inactive": [0, 0, 0],
+            "ntp_background": [0, 0, 0],
+            "ntp_header": [130, 0, 0],
+            "ntp_link": [0, 0, 0],
+            "ntp_link_underline": [0, 0, 0],
+            "ntp_section": [0, 0, 0],
+            "ntp_section_link": [0, 0, 0],
+            "ntp_section_link_underline": [0, 0, 0],
+            "ntp_section_text": [0, 0, 0],
+            "ntp_text": [178, 219, 238],
+            "tab_background_text": [178, 219, 238],
+            "tab_text": [225, 187, 52],
+            "toolbar": [0, 0, 0, 0.9]
+        },
+        "tints": {
+            "buttons": [1.0, 1.0, 0.5],
+            "frame": [-1.0, 0.5, 0.5],
+            "frame_inactive": [-1.0, 0.5, 0.5],
+            "frame_incognito": [-1.0, 0.5, 0.5],
+            "frame_incognito_inactive": [0, 0.5, 0.5],
+            "background_tab": [0.5, 0.5, 0.5]
+        },
+        "properties": {
+            "ntp_background_alignment": "top",
+            "ntp_background_repeat": "no-repeat",
+            "ntp_logo_alternate": 1
+        }
+    }
 }

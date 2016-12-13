@@ -3,13 +3,13 @@
 	"name": "Made Monster Theme",
 	"version": "1.0.1",
 	"description": "Made Monster Theme for Google Chrome",
-    "author": "Extreme Hunt",
+	"author": "Extreme Hunt",
 	"icons": {
 		"16": "images/icons/icon16.png",
 		"48": "images/icons/icon48.png",
 		"128": "images/icons/icon128.png"
- 	 },
-  	"theme": {
+	 },
+	"theme": {
 		"images": {
 			"theme_button_background": "images/theme_window_control_background.png",
 			"theme_frame": "images/theme_frame.png",
@@ -27,33 +27,33 @@
 			"theme_window_control_background": "images/theme_window_control_background.png"
 		},
 		"colors": {
-			"bookmark_text": [ 178, 219, 238 ],
-			"button_background": [ 0, 0, 0 ],
-			"control_background": [ 0, 0, 0 ],
-			"frame": [ 0, 0, 0 ],
-			"frame_inactive": [ 0, 0, 0 ],
-			"frame_incognito": [ 0, 0, 0 ],
-			"frame_incognito_inactive": [ 0, 0, 0 ],
-			"ntp_background": [ 0, 0, 0 ],
-			"ntp_header": [ 51, 51, 51 ],
-			"ntp_link": [ 225, 187, 52 ],
-			"ntp_link_underline": [ 225, 187, 52 ],
-			"ntp_section": [ 85, 85, 85 ],
-			"ntp_section_link": [ 25, 187, 52 ],
-			"ntp_section_link_underline": [ 25, 187, 52 ],
-			"ntp_section_text": [ 178, 219, 238 ],
-			"ntp_text": [ 178, 219, 238 ],
-			"tab_background_text": [ 178, 219, 238 ],
-			"tab_text": [ 225, 187, 52 ],
-			"toolbar": [ 0, 0, 0, 0.9 ]
+			"bookmark_text": [178, 219, 238],
+			"button_background": [0, 0, 0],
+			"control_background": [0, 0, 0],
+			"frame": [0, 0, 0],
+			"frame_inactive": [0, 0, 0],
+			"frame_incognito": [0, 0, 0],
+			"frame_incognito_inactive": [0, 0, 0],
+			"ntp_background": [0, 0, 0],
+			"ntp_header": [51, 51, 51],
+			"ntp_link": [225, 187, 52],
+			"ntp_link_underline": [225, 187, 52],
+			"ntp_section": [85, 85, 85],
+			"ntp_section_link": [25, 187, 52],
+			"ntp_section_link_underline": [25, 187, 52],
+			"ntp_section_text": [178, 219, 238],
+			"ntp_text": [178, 219, 238],
+			"tab_background_text": [178, 219, 238],
+			"tab_text": [225, 187, 52],
+			"toolbar": [0, 0, 0, 0.9]
 		},
 		"tints": {
-			"buttons": [ 1.0, 1.0, 0.5 ],
-			"frame": [ -1.0, 0.5, 0.5 ],
-			"frame_inactive" : [ -1.0, 0.5, 0.5 ],
-			"frame_incognito": [ -1.0, 0.5, 0.5 ],
-			"frame_incognito_inactive": [ 0, 0.5, 0.5 ],
-			"background_tab": [ -1.0, 0.5, 0.5 ]
+			"buttons": [1.0, 1.0, 0.5],
+			"frame": [-1.0, 0.5, 0.5],
+			"frame_inactive": [-1.0, 0.5, 0.5],
+			"frame_incognito": [-1.0, 0.5, 0.5],
+			"frame_incognito_inactive": [0, 0.5, 0.5],
+			"background_tab": [-1.0, 0.5, 0.5]
 		},
 		"properties": {
 			"ntp_background_alignment": "top",
