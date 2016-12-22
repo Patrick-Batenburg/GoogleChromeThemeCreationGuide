@@ -144,6 +144,7 @@ For Google Chrome
 Recommended image elements dimensions.
 
 *Image elements are defined under the "images" section in the manifest.json file.*
+
 | Parameters                        | Recommended W x H                             |
 | --------------------------------- | --------------------------------------------- |
 | "theme_button_background"         | 30 x 30                                       |
