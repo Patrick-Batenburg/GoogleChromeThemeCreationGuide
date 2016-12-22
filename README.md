@@ -1,8 +1,5 @@
 # Theme Creation Guide
 For Google Chrome
-
-
-
   
 # Table of Contents
 - [Manifest File Format](#manifest-file-format)
@@ -436,7 +433,9 @@ To package an extension:
 5.	Click **Package**. The packager creates two files: a .crx file, which is the actual extension that can be installed, and a .pem file, which contains the private key.
 
 **Do not lose the private key!** Keep the .pem file secret and in a safe place. You'll need it later if you want to do any of the following:
+
 •	[**Update**](https://developer.chrome.com/extensions/packaging#update) the extension
+
 •	[**Upload**](https://developer.chrome.com/extensions/packaging#upload) the extension to the Chrome Web Store
 
 If the extension is successfully packaged, you'll see a dialog like this that tells you where to find the .crx and .pem files:
@@ -468,7 +467,7 @@ If you want to keep the extension ID the same, follow these steps:
 ## Packaging at the command line
 Another way to package extensions is by invoking chrome.exe at the command line. Use the `--pack-extension` flag to specify the location of the extension's folder. Use `--pack-extension-key` to specify the location of the extension's private key file. For example:
 
-`hrome.exe –pack-extension=C:\muext –pack-extension-key=C:\myext.pem`
+`chrome.exe –pack-extension=C:\muext –pack-extension-key=C:\myext.pem`
 
 ## Package format and scripts
 For more information on the format, as well as pointers to scripts you can use to create .crx files, see [**CRX Package Format**](https://developer.chrome.com/extensions/crx "CRX Package Format").
