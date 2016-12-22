@@ -166,6 +166,7 @@ Recommended image elements dimensions.
 Images should generally be in PNG format, because PNG has the best support for transparency. They can, however, be in any format supported by WebKit, including BMP, GIF, and JPEG.
 
 *Image elements are defined under the "images" section in the manifest.json file.*
+
 | #     | Description                                                                       | manifest.json Notation            |
 | ---   | ---                                                                               | ---                               |
 | 1.    | The background of all the toolbar buttons.                                        | "theme_button_background"         |
@@ -187,6 +188,7 @@ Images should generally be in PNG format, because PNG has the best support for t
 Colors are entered as RGB values, some elements can contain opacity value also. e.g. ```json "ntp_section": [15, 15, 15, 0.6] ```
 
 *Color elements are defined under the "colors" section in the manifest.json file.*
+
 | #     | Description                                                           | manifest.json Notation        |
 | ---   | ---                                                                   | ---                           |
 | 10.   | The color of the bookmark element’s tekst.                            | "bookmark_text"               |
@@ -213,6 +215,7 @@ Colors are entered as RGB values, some elements can contain opacity value also. 
 Tint elements change the hue, saturation and lightness of images.
 
 *Tint elements come under the "tints" section in the manifest.json file.*
+
 | #     | Description                                                           | manifest.json Notation        |
 | ---   | ---                                                                   | ---                           |
 | 22.   | The color tint that can be applied to various buttons in chrome.      | "buttons"                     |
@@ -226,6 +229,7 @@ Tint elements change the hue, saturation and lightness of images.
 Property elements change the properties of images about how they are displayed.
 
 *Property elements come under the "properties" section in the manifest.json file.*
+
 | #     | Description                                                           | manifest.json Notation        |
 | ---   | ---                                                                   | ---                           |
 | 25.   | The property that tells the alignment of the inner backrground image. | "ntp_background_alignment"    |
@@ -259,7 +263,7 @@ This is an image, this represents the tabs - all the inactive tabs.
 Usually a less saturated image of `"theme_toolbar"` is used for this. You may also design something else, but make sure that the design enables the user to distinguish the inactive tabs from the active one! This image also tiles default in x-axis and the height of this can be around 65p, the width is up to you.
 
 #### theme_toolbar
-This is an image that covers the area of the current tab and the toolbar below it. For older versions of Google Chrome, make sure this image is over 119px in height because the find bar (which appears when you press Ctrl+F ) shares the tool bar image, the width is up to you. Similar to the `json "theme_frame"`, this image also tiles along the x-axis so you have the option to create pattern or create a long width image for the toolbar. Remember that the toolbar contains some buttons and when the bookmarks are visible (CMD+B or Ctrl+B), they too occupy space in the toolbar.
+This is an image that covers the area of the current tab and the toolbar below it. For older versions of Google Chrome, make sure this image is over 119px in height because the find bar (which appears when you press Ctrl+F ) shares the tool bar image, the width is up to you. Similar to the `"theme_frame"`, this image also tiles along the x-axis so you have the option to create pattern or create a long width image for the toolbar. Remember that the toolbar contains some buttons and when the bookmarks are visible (CMD+B or Ctrl+B), they too occupy space in the toolbar.
 
 So don't make the design too much crowded, or else the toolbar will not be visually appealing. Usually for the toolbar, a square, tiling image is preferred, which might be a gradient or just plain color.
 
@@ -274,61 +278,197 @@ This is the image that specifies the background for various buttons (stop, refre
 #### theme_frame_inactive
 This is an image, representing the area behind the tabs, when the chrome window is out of focus/inactive.
 
-All that is applicable to `"theme_frame"`, applies to this. Usually to avoid making the theme heavy, you can go for `json "frame_inactive"` tint, to show that the window is inactive-it's efficient than creating a whole new image. But it's up to the designer to decide, if it's going to be an image seperately for the inactive state or there is going to be a color tint when the window is inactive.
+All that is applicable to `"theme_frame"`, applies to this. Usually to avoid making the theme heavy, you can go for `"frame_inactive"` tint, to show that the window is inactive-it's efficient than creating a whole new image. But it's up to the designer to decide, if it's going to be an image seperately for the inactive state or there is going to be a color tint when the window is inactive.
 
 #### theme_frame_incognito
-This is similar to the `"theme_frame"`, but this image represents the frame of a window in incognito mode. You may choose to redesign the image specially for the incognito mode or ignore this, so that whatever you made for `json"theme_frame"` will be tinted (see `"frame_incognito"`) and used in incognito mode (it's by default that it gets a dark tint in incognito mode).
+This is similar to the `"theme_frame"`, but this image represents the frame of a window in incognito mode. You may choose to redesign the image specially for the incognito mode or ignore this, so that whatever you made for `"theme_frame"` will be tinted (see `"frame_incognito"`) and used in incognito mode (it's by default that it gets a dark tint in incognito mode).
 
 #### theme_frame_incognito_inactive
-This is also an image, similar to `"theme_frame_inactive" `, but this image is for the inactive frame of a window in incognito mode (see `"frame_incognito_inactive"`).
+This is also an image, similar to `"theme_frame_inactive"`, but this image is for the inactive frame of a window in incognito mode (see `"frame_incognito_inactive"`).
 
 #### theme_frame_overlay
-This is the image that will be displayed at the top left corner of the frame, over the `"theme_frame"` image. Also this image doesn't repeat by default. Hence this image may be used in case you don't want the frame area design to repeat. Similar to the `"theme_frame" `, anything over 80px height is good, usually with grading alpha transparency at the bottom so that the image blends with the `"frame" ` color.
+This is the image that will be displayed at the top left corner of the frame, over the `"theme_frame"` image. Also this image doesn't repeat by default. Hence this image may be used in case you don't want the frame area design to repeat. Similar to the `"theme_frame"`, anything over 80px height is good, usually with grading alpha transparency at the bottom so that the image blends with the `"frame"` color.
 
 #### theme_frame_overlay_inactive
 This is similar to `"theme_frame_overlay"`, but will be displayed when the browser window is inactive. If you do not include this image, `"theme_frame_overlay"` image will be darkly tinted and used by default-to denote the inactive frame.
 
 #### theme_ntp_attribution
+This is the image that is displayed at the bottom right corner of the new tab page. Google Chrome automatically puts a heading "Theme created by" and below that displays whatever image you give as `"theme_ntp_attribution"`.
+
+A good practice is to create a small png file enough for an aurthor name 
+(and contact if needed) with alpha transparency background. Making large and more color intense image will attract view, but will make the theme a bit heavier (the file size of the theme may increase with bigger png file) but it's your choice anyway.
+
 #### theme_tab_background_incognito
+This is an image, that represents the inactive tabs, in the incognito mode. Alternatively one can use the tinting `"background_tab"`, to effect inactive tabs in incognito mode, but there is a slight problem that some may want to avoid even if you tint the inactive tabs of the incognito window, the inactive tabs are made transparent (by default). Hence they'll show the area behind them. i.e. the frame. If you want to avoid this, you can include this image.
+
 #### theme_tab_background_v
+This is an image that serves to function as an alternative tab background 
+when Google Chrome is used in Aero mode. v may stand for 'vista', etc.
+
 #### theme_window_control_background
+This is the image that specifies the background for the window control buttons (minimize, maximize, close and new tab). This image is also not necessary until you desperatly need to change the control button background. If the image is included, the browser leaves off 1px at the top and left of image and maps a 16px height button from it, the width varies according to buttons though.
+
+If this image is not included, the control buttons assume the background color specified in the color element `"button_background"`.
 
 ### Color Elements
 #### bookmark_text
-#### button_background
-#### control_background
-#### frame
-#### frame_inactive
-#### frame_incognito
-#### frame_incognito_inactive
-#### ntp_background
-#### ntp_header
-#### ntp_link
-#### ntp_link_underline
-#### ntp_section
-#### ntp_section_link
-#### ntp_section_link_underline
-#### ntp_section_text
-#### ntp_text
-#### tab_background_text
-#### tab_text
-#### toolbar
+This is a color element that specifies the color of the text of bookmarks in the toolbar and the text for the download bar that appears at the bottom. 
+**Note:** During a download, the text color indicating the number of MB downloaded is not configurable.
 
-### Tint Elements
-#### buttons
+#### button_background
+This is a color element that specifies the color for the background of all the buttons in the toolbar area (back, forward, bookmark, etc..). This element too can contain opacity values like the toolbar, which will affect the opacity of the window control buttons (minimize, maximize, close).
+
+#### control_background
+This should specify the color of the control buttons of window control buttons (minimize, maximize, close).
+
 #### frame
+This is a color element, that specifies the color of the frame area of the browser (the area behind the tabs + the border). It occupies the area that is not covered by the `"theme_frame"` image. The format to specify this element in the manifest.json file is: `"frame": [R, G, B]`
+
 #### frame_inactive
+This is a color element, that specifies the color of the frame area of the browser but when the window is inactive/out of focus (the area behind the tabs + the border). It occupies the area that is not covered by the `"theme_frame"` image. The format to specify this element in the manifest.json file is: `"frame_inactive" : [R,G,B]`
+
 #### frame_incognito
+This is a color element similar to `"frame"`, but under the incognito mode.
+
 #### frame_incognito_inactive
+This is a color element similar to `"frame_inactive"`, but under the incognito mode.
+
+#### ntp_background
+This is a color element that specifies the color of the background of the new tab page (covers all areas that is not mapped by `"theme_ntp_background"`). Usually if a alpha transparency is employed in the image element `"theme_ntp_background"`, make sure that `"ntp_background"` is such that it matches that image element.
+
+#### ntp_header
+This is a color element that specifies the color for the frame of quick link buttons, when one hovers the mouse over it. It also specifies the 1px border color of the toolbar element, the `"ntp_section"` element and the color of three small buttons in the new tab page-thumbnail view, list view, change page layout.
+
+#### ntp_link
+This is a color element that specifes the color of all the links that may appear in the new tab page. (currently the links under list view and links of tips that appear at the bottom of new tab page takes it's color from this).
+
+#### ntp_link_underline
+This is a color element that specifies the color of the underline of all links in the new tab page (the color of underline of the `"ntp_link"` element).
+ 
+#### ntp_section
+This is a color element that specifies the color for the border of the quick link buttons and also the background color for the recently closed bar that appears above the tips area. Similar to the toolbar element, this can als contain opacity value.
+
+#### ntp_section_link
+This is a color element that specifies the color of all the links that appear in the section area. Currently all the links in the "Recently closed" bar take their color from this.
+
+#### ntp_section_link_underline
+This is a color element that specifies the color of underlines of all the links that appear in the section area. (underlines the `"ntp_section_link"` element).
+
+#### ntp_section_text
+This is a clolor element that specifies the color of all the text that appears in the section area.
+
+#### ntp_text
+This is a color element that specifies the color of all the text that appears in the new tab page. (tips, quick access lables, etc..).
+
+#### tab_background_text
+This is a color element that specifies the color of the title text of all the inactive tabs/out of focus tabs.
+
+#### tab_text
+This is a color element that specifies the color of the title text of the current tab (tab title name of current tab).
+
+#### toolbar
+This is a color element that specifies the background color of the bookmarks bar, that is visible only in the new tab page, when you press the shortcut keys Ctrl+B or CMD+B. And it contains a 1px border whose color is defined by `"ntp_header"`. Also this element can contain an opacity value that effects transparency of this bar. Note that opacity value are float values that ranges from 0 to 1, 0 being fully transparent and 1 being fully opaque.
+
+The format to specify this element in the manifest.json file is : 
+`"toolbar": [R, G, B, opacity]`
+E.g. `"toolbar": [25, 154, 154, 0.5]`
+
+Note that this element also specifies color value of the background for floating the status bar (in the bottom of page). It's found that using opacity values for this element makes the status bar transparent, but the text inside it will contain a opaque background of same color-hence area without the text will be transparent.
+
+## Tint Elements
+The tint elements are used to assign color tints to certain elements of the browser area. The value of the tint is in floating values ranging from 0 to 1 and -1.0 means no change. 
+E.g, `"buttons": [0.3, 0.5, 0.5]` (the values range from 0 to 1, hence even 0.125 or 0.65 represent a color).
+
+Here the first value represents the hue value, for which 0 means red and 1 means red. The next is saturation value that lets you set vibrancy of the color, here 0 means completely desaturated and 1 means fully saturated. The next value is lightness/brightness value. Here 0 means least bright and 1 means most bright
+
+#### buttons
+This is a tint element, that is used to specify a color tint for icons inside all the buttons in the toolbar (back, forward, refresh, etc..).
+
+#### frame
+This is a tint element, that is used to specify a color tint for the frame area. Whatever image you've created for the frame area will be tinted with a color that you specify here.
+
+#### frame_inactive
+This is a tint element, similar to the tint element frame, but the tint is applied when the window is inactive/out of focus.
+
+#### frame_incognito
+This is a tint element, that is used to specify a color tint for the frame area in incognito mode. Whatever image you've created for the frame area will be tinted with a color that you specify here.
+
+#### frame_incognito_inactive
+This is a tint element, that is used to specify a color tint for the frame area in incognito mode, but when the window is inactive/out of focus.
+ 
 #### background_tab
-#### Property Elements
+This is a tint element,that specifies the color tint of the inactive tabs in incognito mode.
+
+## Property Elements
 #### ntp_background_alignment
+This is a property element, that is used to control the alignment property of the image element `"theme_ntp_background"`. The value for this element is entered as follows: `"ntp_background_alignment": "VALUE"`
+
+In the place of VALUE, you can enter either `"top"`, `"bottom"`, `"left"` or `"right"`. Further you can use combinations like `"top-left"`, `"bottom-right"`, etc… 
+The difference is that using only `"left"`, aligns the background image to the left center of the new tab page. While using 
+`"top-left"` aligns the image to the top left corner of the new tab page. 
+E.g. `"ntp_background_alignment": "bottom-left"` (Note that the default alignment of the background image is `"center"`).
+
 #### ntp_background_repeat
+This is a property element, that is used to control the repetition of the image element "theme_ntp_background". It is specified as:
+
+`"ntp_background_repeat": "VALUE"`
+
+In the place of VALUE, you can enter either `"repeat"`, `"no-repeat"`, `"repeat-x"` or `"repeat-y"`. Depending upon the image you've created as the background you can choose to repeat the image along x-axis or y-axis or turn repeat off, since repeat is on by default!
+
 #### ntp_logo_alternate
+This is a propety element that specifies what header of Google chrome you wnat for your theme. It is specified as follows:
+
+`"ntp_logo_alternate": VALUE`
+
+Note that this element's value should not be entered in double quotes! In the place of VALUE you can enter 0 or 1. Choosing 0 will give you a colorful Google Chrome header logo inside the new tab page. Choosing 1 will give you an all white Google Chrome header logo inside the new tab page.
 
 # Packaging
+This page describes how to package your extension. Extensions are packaged as signed ZIP files with the file extension "crx"—for example, myextension.crx.
+**Note:** You do not need to package your own extension. If you publish your extension using the [**Chrome Developer Dashboard**](https://chrome.google.com/webstore/developer/dashboard "Chrome Developer Dashboard"), then the only reason to create your own .crx file would be to distribute a non-public version—for example, to alpha testers. When you package an extension, the extension is assigned a unique key pair. The extension's ID is based on a hash of the public key. The private key is used to sign each version of the extension and must be secured from public access. Be careful not to include your private key within your extensions!
+
 ## Creating a package
+To package an extension:
+
+1.	Bring up the Extensions management page by going to this URL: **chrome://extensions**
+2.	Ensure that the "Developer mode" checkbox in the top right-hand corner is checked.
+3.	Click the **Pack extension** button. A dialog appears.
+4.	In the **Extension root directory** field, specify the path to the extension's folder, for example, C:\myext. (Ignore the other field; you don't specify a private key file the first time you package a particular extension.)
+5.	Click **Package**. The packager creates two files: a .crx file, which is the actual extension that can be installed, and a .pem file, which contains the private key.
+
+**Do not lose the private key!** Keep the .pem file secret and in a safe place. You'll need it later if you want to do any of the following:
+•	[**Update**](https://developer.chrome.com/extensions/packaging#update) the extension
+•	[**Upload**](https://developer.chrome.com/extensions/packaging#upload) the extension to the Chrome Web Store
+
+If the extension is successfully packaged, you'll see a dialog like this that tells you where to find the .crx and .pem files:
+![alt text](https://developer.chrome.com/static/images/package-success.png "Package success")
+
 ## Updating a package
+To create an updated version of your extension:
+
+1.	Increase the version number in manifest.json.
+2.	Bring up the Extensions management page by going to this URL: **chrome://extensions**
+3.	Click the **Pack extension** button. A dialog appears.
+4.	In the Extension root directory field, specify the path to the extension's folder, for example, C:\myext.
+5.	In the Private key file field, specify the location of the already generated .pem file for this extension, for example, C:\myext.pem.
+6.	Click OK.
+
+If the updated extension is successfully packaged, you'll see a dialog like this:
+ ![alt text](https://developer.chrome.com/static/images/update-success.png "Update success")
+
 ## Uploading a previously packaged extension to the Chrome Web Store
+You can use the Chrome Developer Dashboard to upload an extension that you've previously packaged yourself. However, unless you take special steps, the extension's ID in the Chrome Web Store will be different from its ID in the package you created. This different ID might be a problem if you've distributed your extension package, because it allows users to install multiple versions of your extension, each with its own local data.
+
+If you want to keep the extension ID the same, follow these steps:
+
+1.	Rename the private key that was generated when you created the .crx file to key.pem.
+2.	Put key.pem in the top directory of your extension.
+3.	Compress that directory into a ZIP file.
+4.	Upload the ZIP file using the [**Chrome Developer Dashboard**](https://chrome.google.com/webstore/developer/dashboard "Chrome Developer Dashboard").
+
 ## Packaging at the command line
+Another way to package extensions is by invoking chrome.exe at the command line. Use the `--pack-extension` flag to specify the location of the extension's folder. Use `--pack-extension-key` to specify the location of the extension's private key file. For example:
+
+`hrome.exe –pack-extension=C:\muext –pack-extension-key=C:\myext.pem`
+
 ## Package format and scripts
+For more information on the format, as well as pointers to scripts you can use to create .crx files, see [**CRX Package Format**](https://developer.chrome.com/extensions/crx "CRX Package Format").
