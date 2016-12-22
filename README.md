@@ -162,10 +162,11 @@ Recommended image elements dimensions.
 | "theme_toolbar"                   | ∞ x 128                                       |
 | "theme_window_control_background" | ∞ x 128                                       |
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+
+| Parameters    | Recommended W x H |
+| ------------- | ----------------- |
+| "theme_button_background"  | Content Cell      |
+| Content Cell  | Content Cell      |
 
 # Image Elements
 Images should generally be in PNG format, because PNG has the best support for transparency. They can, however, be in any format supported by WebKit, including BMP, GIF, and JPEG.
