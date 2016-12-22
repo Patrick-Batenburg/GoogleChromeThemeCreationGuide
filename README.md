@@ -145,26 +145,8 @@ Recommended image elements dimensions.
 
 *Image elements are defined under the "images" section in the manifest.json file.*
 | Parameters                        | Recommended W x H                             |
-| ---                               | ---                                           |
+| --------------------------------- | --------------------------------------------- |
 | "theme_button_background"         | 30 x 30                                       |
-| "theme_frame"                     | ∞ x 128                                       |
-| "theme_frame_inactive"            | ∞ x 128                                       |
-| "theme_frame_incognito"           | ∞ x 128                                       |
-| "theme_frame_incognito_inactive"  | ∞ x 128                                       |
-| "theme_frame_overlay"             | 1100 x 64                                     |
-| "theme_frame_overlay_inactive"    | 1100 x 64                                     |
-| "theme_ntp_attribution"           | Any but not too large                         |
-| "theme_ntp_background"            | Recommended Minimum Size for images 800 x 600 |
-| "theme_tab_background"            | 16 x 16 / 48 x 48 / 128 x 128                 |
-| "theme_tab_background_incognito"  | ∞ x 128                                       |
-| "theme_tab_background_v"          | ∞ x 128                                       |
-| "theme_toolbar"                   | ∞ x 128                                       |
-| "theme_window_control_background" | ∞ x 128                                       |
-
-
-| Parameters    | Recommended W x H |
-| ------------- | ----------------- |
-| "theme_button_background"  | 30 x 30        |
 | "theme_frame"                     | ∞ x 128                                       |
 | "theme_frame_inactive"            | ∞ x 128                                       |
 | "theme_frame_incognito"           | ∞ x 128                                       |
