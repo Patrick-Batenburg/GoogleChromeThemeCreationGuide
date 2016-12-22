@@ -69,7 +69,7 @@ For Google Chrome
   - [Package format and scripts](#package-format-and-scripts)  
 
 #  Manifest File Format
-```json
+```javascript
 {
     "manifest_version": 2,
     "name": "My Extension",
@@ -240,23 +240,23 @@ These elements are the starting point, by using only them, you can quickly creat
 #### theme_frame
 This image represents the area behind the tabs. There is no strict dimensions for this image, the rest of the area in the frame that is not covered by this image is covered by the color element frame. It would be helpful to know that this image by default repeats along the x-axis. Hence if you create a small square image, it will be automatically repeated along x-axis-which means you can create patterns if you use short sized images.
 
-Remember this image doesn't repeat along-y, hence make sure it is long enough to cover the toolbar area-anything over 80px height is good, usually with grading alpha transparency at the bottom so that the image blends with the `json "frame"` color. (you can create a large sized frame image, that extends and coveres the frame borders too)
+Remember this image doesn't repeat along-y, hence make sure it is long enough to cover the toolbar area-anything over 80px height is good, usually with grading alpha transparency at the bottom so that the image blends with the `"frame"` color. (you can create a large sized frame image, that extends and coveres the frame borders too)
 
 Else you might see a small seperation to the extreme top left of the frame, when the window is in restored mode due to the wrong size of the image.
 
-Alternatively one can decide to create an image with width-long enough that the image repetition is not seen-this method allowes you to create one continuous design for the frame-but this method might slow down the loading time of the theme since large resolution screens require image of larger width (or else you'll see the repetition of the image). Note that if you don't include this image, the default frame of chrome is displayed, the color element  `json "frame"` doesn't override this.
+Alternatively one can decide to create an image with width-long enough that the image repetition is not seen-this method allowes you to create one continuous design for the frame-but this method might slow down the loading time of the theme since large resolution screens require image of larger width (or else you'll see the repetition of the image). Note that if you don't include this image, the default frame of chrome is displayed, the color element  `"frame"` doesn't override this.
 
 #### theme_ntp_background
 This is the image that is displayed at the large white space in the browser, in the new tab page, it can contain a background image that contains alpha transparency. Note that the notation ntp represents new tab page, hence all elements which contain ntp in the notation will correspond to some element inside the new tab page.
 
-There are two ways you can create the inner background for the browser-use a large image without repetition/tiling or use a small image that repeats in x-axis and/or y-axis. (see `json "ntp_background_repeat"`).
+There are two ways you can create the inner background for the browser-use a large image without repetition/tiling or use a small image that repeats in x-axis and/or y-axis. (see `"ntp_background_repeat"`).
 
-There is also option for you to select the alignment of this image, by default the image is center aligned, but you may choose to align it the way you want. (see `json "ntp_background_alignment"`).
+There is also option for you to select the alignment of this image, by default the image is center aligned, but you may choose to align it the way you want. (see `"ntp_background_alignment"`).
 
 #### theme_tab_background
 This is an image, this represents the tabs - all the inactive tabs.
 
-Usually a less saturated image of `json "theme_toolbar"` is used for this. You may also design something else, but make sure that the design enables the user to distinguish the inactive tabs from the active one! This image also tiles default in x-axis and the height of this can be around 65p, the width is up to you.
+Usually a less saturated image of `"theme_toolbar"` is used for this. You may also design something else, but make sure that the design enables the user to distinguish the inactive tabs from the active one! This image also tiles default in x-axis and the height of this can be around 65p, the width is up to you.
 
 #### theme_toolbar
 This is an image that covers the area of the current tab and the toolbar below it. For older versions of Google Chrome, make sure this image is over 119px in height because the find bar (which appears when you press Ctrl+F ) shares the tool bar image, the width is up to you. Similar to the `json "theme_frame"`, this image also tiles along the x-axis so you have the option to create pattern or create a long width image for the toolbar. Remember that the toolbar contains some buttons and when the bookmarks are visible (CMD+B or Ctrl+B), they too occupy space in the toolbar.
@@ -269,24 +269,24 @@ Use these to create a more advanced theme.
 
 ### Image Elements
 #### theme_button_background
-This is the image that specifies the background for various buttons (stop, refresh, back, forward, etc..) in the toolbar. This image is optional, if you do not include this image, the color element `json "button_background"` overrides the button's background color.
+This is the image that specifies the background for various buttons (stop, refresh, back, forward, etc..) in the toolbar. This image is optional, if you do not include this image, the color element `"button_background"` overrides the button's background color.
 
 #### theme_frame_inactive
 This is an image, representing the area behind the tabs, when the chrome window is out of focus/inactive.
 
-All that is applicable to `json "theme_frame"`, applies to this. Usually to avoid making the theme heavy, you can go for `json "frame_inactive"` tint, to show that the window is inactive-it's efficient than creating a whole new image. But it's up to the designer to decide, if it's going to be an image seperately for the inactive state or there is going to be a color tint when the window is inactive.
+All that is applicable to `"theme_frame"`, applies to this. Usually to avoid making the theme heavy, you can go for `json "frame_inactive"` tint, to show that the window is inactive-it's efficient than creating a whole new image. But it's up to the designer to decide, if it's going to be an image seperately for the inactive state or there is going to be a color tint when the window is inactive.
 
 #### theme_frame_incognito
-This is similar to the `json "theme_frame"`, but this image represents the frame of a window in incognito mode. You may choose to redesign the image specially for the incognito mode or ignore this, so that whatever you made for `json"theme_frame"` will be tinted (see `json "frame_incognito"`) and used in incognito mode (it's by default that it gets a dark tint in incognito mode).
+This is similar to the `"theme_frame"`, but this image represents the frame of a window in incognito mode. You may choose to redesign the image specially for the incognito mode or ignore this, so that whatever you made for `json"theme_frame"` will be tinted (see `"frame_incognito"`) and used in incognito mode (it's by default that it gets a dark tint in incognito mode).
 
 #### theme_frame_incognito_inactive
-This is also an image, similar to `json "theme_frame_inactive" `, but this image is for the inactive frame of a window in incognito mode (see `json "frame_incognito_inactive"`).
+This is also an image, similar to `"theme_frame_inactive" `, but this image is for the inactive frame of a window in incognito mode (see `"frame_incognito_inactive"`).
 
 #### theme_frame_overlay
-This is the image that will be displayed at the top left corner of the frame, over the `json "theme_frame"` image. Also this image doesn't repeat by default. Hence this image may be used in case you don't want the frame area design to repeat. Similar to the `json "theme_frame" `, anything over 80px height is good, usually with grading alpha transparency at the bottom so that the image blends with the `json "frame" ` color.
+This is the image that will be displayed at the top left corner of the frame, over the `"theme_frame"` image. Also this image doesn't repeat by default. Hence this image may be used in case you don't want the frame area design to repeat. Similar to the `"theme_frame" `, anything over 80px height is good, usually with grading alpha transparency at the bottom so that the image blends with the `"frame" ` color.
 
 #### theme_frame_overlay_inactive
-This is similar to `json "theme_frame_overlay"`, but will be displayed when the browser window is inactive. If you do not include this image, `json "theme_frame_overlay"` image will be darkly tinted and used by default-to denote the inactive frame.
+This is similar to `"theme_frame_overlay"`, but will be displayed when the browser window is inactive. If you do not include this image, `"theme_frame_overlay"` image will be darkly tinted and used by default-to denote the inactive frame.
 
 #### theme_ntp_attribution
 #### theme_tab_background_incognito
