@@ -182,7 +182,7 @@ Images should generally be in PNG format, because PNG has the best support for t
 | 9.    | The background for the window control buttons (close, maximize, etc.,)            | "theme_window_control_background" |
 
 # Color Elements
-Colors are entered as RGB values, some elements can contain opacity value also. e.g. ```json "ntp_section": [15, 15, 15, 0.6] ```
+Colors are entered as RGB values, some elements can contain opacity value also. e.g. `"ntp_section": [15, 15, 15, 0.6]`
 
 *Color elements are defined under the "colors" section in the manifest.json file.*
 
