@@ -146,7 +146,7 @@ Recommended image elements dimensions.
 
 *Image elements are defined under the "images" section in the manifest.json file.*
 | Parameters                        | Recommended W x H                             |
-| --------------------------------- | --------------------------------------------- |
+| ---                               | ---                                           |
 | "theme_button_background"         | 30 x 30                                       |
 | "theme_frame"                     | ∞ x 128                                       |
 | "theme_frame_inactive"            | ∞ x 128                                       |
@@ -167,7 +167,7 @@ Images should generally be in PNG format, because PNG has the best support for t
 
 *Image elements are defined under the "images" section in the manifest.json file.*
 | #     | Description                                                                       | manifest.json Notation            |
-| ----- | --------------------------------------------------------------------------------- | --------------------------------- |
+| ---   | ---                                                                               | ---                               |
 | 1.    | The background of all the toolbar buttons.                                        | "theme_button_background"         |
 | 2.    | The frame of the chrome browser/the area that is behind the tabs.                 | "theme_frame"                     |
 | 2.1   | The same area as above, only that this represents the inactive state.             | "theme_frame_inactive"            |
@@ -188,7 +188,7 @@ Colors are entered as RGB values, some elements can contain opacity value also. 
 
 *Color elements are defined under the "colors" section in the manifest.json file.*
 | #     | Description                                                           | manifest.json Notation        |
-| ----- | --------------------------------------------------------------------- | ----------------------------- |
+| ---   | ---                                                                   | ---                           |
 | 10.   | The color of the bookmark element’s tekst.                            | "bookmark_text"               |
 | 11.   | The background color of all the toolbar buttons.                      | "button_background"           |
 | 12.   | The color of the window control buttons (close, maximize, etc.)       | "control_background"          |
@@ -214,7 +214,7 @@ Tint elements change the hue, saturation and lightness of images.
 
 *Tint elements come under the "tints" section in the manifest.json file.*
 | #     | Description                                                           | manifest.json Notation        |
-| ----- | --------------------------------------------------------------------- | ----------------------------- |
+| ---   | ---                                                                   | ---                           |
 | 22.   | The color tint that can be applied to various buttons in chrome.      | "buttons"                     |
 | 23.   | The color tint that can be applied to the frame of chrome.            | "frame"                       |
 | 23.1  | The color tint that is applied when the chrome window is inactive.    | "frame_inactive"              |
@@ -227,7 +227,7 @@ Property elements change the properties of images about how they are displayed.
 
 *Property elements come under the "properties" section in the manifest.json file.*
 | #     | Description                                                           | manifest.json Notation        |
-| ----- | --------------------------------------------------------------------- | ----------------------------- |
+| ---   | ---                                                                   | ---                           |
 | 25.   | The property that tells the alignment of the inner backrground image. | "ntp_background_alignment"    |
 | 26.   | This property specifies if the above background should be repeated.   | "ntp_background_repeat"       |
 | 27    | This lets you select the type of google chrome header you want.       | "ntp_logo_alternate"          |
