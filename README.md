@@ -66,7 +66,7 @@ For Google Chrome
   - [Package format and scripts](#package-format-and-scripts)  
 
 #  Manifest File Format
-```json5
+```javascript
 {
     "manifest_version": 2,
     "name": "My Extension",
