@@ -79,7 +79,7 @@ For Google Chrome
     },
     "author": "Name|Username|Nickname",
     "theme": {
-        // Pick image elements your gonna use (or none). Name of images can be anything.
+        // Pick image elements you're gonna use (or none). Name of images can be anything.
         "images": {
             "theme_button_background": "images/theme_window_control_background.png",
             "theme_frame": "images/theme_frame.png",
@@ -96,7 +96,7 @@ For Google Chrome
             "theme_toolbar": "images/theme_toolbar.png",
             "theme_window_control_background": "images/theme_window_control_background.png"
         },
-        // Pick color elements your gonna use (or none). Colors are in RGB format.
+        // Pick color elements you're gonna use (or none). Colors are in RGB format.
         "colors": {
             "bookmark_text": [0, 0, 0],
             "button_background": [0, 0, 0],
@@ -118,7 +118,7 @@ For Google Chrome
             "tab_text": [0, 0, 0],
             "toolbar": [0, 0, 0, 0.0]
         },
-        // Pick tint elements your gonna use (or none). Tints are in HSL format.
+        // Pick tint elements you're gonna use (or none). Tints are in HSL format.
         "tints": {
             "buttons": [0.5, 0.5, 0.5],
             "frame": [0.5, 0.5, 0.5],
@@ -127,7 +127,7 @@ For Google Chrome
             "frame_incognito_inactive": [0.5, 0.5, 0.5],
             "background_tab": [0.5, 0.5, 0.5]
         },
-        // Pick property elements your gonna use (or none).
+        // Pick property elements you're gonna use (or none).
         "properties": {
             "ntp_background_alignment": "center|stretch|top|top-left|top-right|bottom|bottom-left|bottom-right",
             "ntp_background_repeat": "no-repeat|repeat|repeat-x|repeat-y",
@@ -467,7 +467,7 @@ If you want to keep the extension ID the same, follow these steps:
 ## Packaging at the command line
 Another way to package extensions is by invoking chrome.exe at the command line. Use the `--pack-extension` flag to specify the location of the extension's folder. Use `--pack-extension-key` to specify the location of the extension's private key file. For example:
 
-`chrome.exe –pack-extension=C:\muext –pack-extension-key=C:\myext.pem`
+`chrome.exe –pack-extension=C:\myext –pack-extension-key=C:\myext.pem`
 
 ## Package format and scripts
 For more information on the format, as well as pointers to scripts you can use to create .crx files, see [**CRX Package Format**](https://developer.chrome.com/extensions/crx "CRX Package Format").
