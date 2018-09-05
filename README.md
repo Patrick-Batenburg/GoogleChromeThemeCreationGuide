@@ -129,7 +129,7 @@ For Google Chrome
         },
         // Pick property elements you're gonna use (or none).
         "properties": {
-            "ntp_background_alignment": "center|stretch|top|top-left|top-right|bottom|bottom-left|bottom-right",
+            "ntp_background_alignment": "center|stretch|top|top left|top right|bottom|bottom left|bottom right",
             "ntp_background_repeat": "no-repeat|repeat|repeat-x|repeat-y",
             "ntp_logo_alternate": 0
         }
@@ -400,10 +400,10 @@ This is a tint element,that specifies the color tint of the inactive tabs in inc
 #### ntp_background_alignment
 This is a property element, that is used to control the alignment property of the image element `"theme_ntp_background"`. The value for this element is entered as follows: `"ntp_background_alignment": "VALUE"`
 
-In the place of VALUE, you can enter either `"top"`, `"bottom"`, `"left"` or `"right"`. Further you can use combinations like `"top-left"`, `"bottom-right"`, etc… 
+In the place of VALUE, you can enter either `"top"`, `"bottom"`, `"left"` or `"right"`. Further you can use combinations like `"top left"`, `"bottom right"`, etc…
 The difference is that using only `"left"`, aligns the background image to the left center of the new tab page. While using 
-`"top-left"` aligns the image to the top left corner of the new tab page. 
-E.g. `"ntp_background_alignment": "bottom-left"` (Note that the default alignment of the background image is `"center"`).
+`"top left"` aligns the image to the top left corner of the new tab page.
+E.g. `"ntp_background_alignment": "bottom left"` (Note that the default alignment of the background image is `"center"`).
 
 #### ntp_background_repeat
 This is a property element, that is used to control the repetition of the image element "theme_ntp_background". It is specified as:

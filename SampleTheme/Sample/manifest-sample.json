@@ -60,7 +60,7 @@
         },
         // Pick property elements your gonna use (or none).
         "properties": {
-            "ntp_background_alignment": "center|stretch|top|top-left|top-right|bottom|bottom-left|bottom-right",
+            "ntp_background_alignment": "center|stretch|top|top left|top right|bottom|bottom left|bottom right",
             "ntp_background_repeat": "no-repeat|repeat|repeat-x|repeat-y",
             "ntp_logo_alternate": 0
         }
